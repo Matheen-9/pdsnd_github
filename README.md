@@ -1,8 +1,8 @@
 ### Date created
-Include the date you created this project and README file.
+.gitignore and README file.
 
 ### Project Title
-Replace the Project Title
+Project 3
 
 ### Description
 Describe what your project is about and what it does
