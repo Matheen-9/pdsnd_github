@@ -25,6 +25,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Please Enter the city(chicago, new york city, washington)!\n').lower()
     while city not in CITY_DATA.keys():
+        print('statement warning regarding Washington\'s lack of user data')
         city = input('Please Enter the city(chicago, new york city, washington)!\n').lower()
     if city in CITY_DATA:
         print('You choosed city : {}'.format(city))
@@ -213,7 +214,7 @@ def slicing (df):
 
     # each loop displays 5 lines of raw data
     global from_offset
-	
+
     from_offset = 0
 
     raw_data = df.iloc[from_offset:from_offset+5]
@@ -229,7 +230,7 @@ def slicing (df):
             break
 
     return raw_data
-	
+
 
 def main():
     while True:
